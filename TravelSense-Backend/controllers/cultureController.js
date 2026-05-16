@@ -45,19 +45,18 @@ Respond ONLY in valid JSON format matching this exact structure containing no ma
 
           // Server-side Image Scraping: Get Wikipedia images or unique fallbacks
           const savoryFallbacks = [
-            "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=500&q=80",
-            "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500&q=80",
-            "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500&q=80",
-            "https://images.unsplash.com/photo-1493770348161-369560ae357d?w=500&q=80",
-            "https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=500&q=80",
-            "https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=500&q=80"
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg/500px-Good_Food_Display_-_NCI_Visuals_Online.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Recipe_of_delicious_street_food_in_India.jpg/500px-Recipe_of_delicious_street_food_in_India.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Tandoori_Chicken.jpg/500px-Tandoori_Chicken.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Triangle_paratha_%28cropped%29.JPG/500px-Triangle_paratha_%28cropped%29.JPG",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Punjabi_Sarsoon_Ka_Saag.JPG/500px-Punjabi_Sarsoon_Ka_Saag.JPG",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Ghugni.jpg/500px-Ghugni.jpg"
           ];
           const dessertFallbacks = [
-            "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=500&q=80",
-            "https://images.unsplash.com/photo-1484723091791-c0870f443831?w=500&q=80",
-            "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500&q=80",
-            "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=500&q=80",
-            "https://images.unsplash.com/photo-1587314168485-3236d6710814?w=500&q=80"
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Indian_Sweets.jpg/500px-Indian_Sweets.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Malpoa_pitha.jpg/500px-Malpoa_pitha.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Baleswari_khaja_pheni_Oriya_cuisine.jpg/500px-Baleswari_khaja_pheni_Oriya_cuisine.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Thekua_-_Chhath_Festival_-_Kolkata_2013-11-09_4316.JPG/500px-Thekua_-_Chhath_Festival_-_Kolkata_2013-11-09_4316.JPG"
           ];
 
           const enrichedFoods = await Promise.all(parsedData.famous_foods.map(async (food) => {
