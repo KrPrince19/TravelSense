@@ -59,22 +59,3 @@ Thumbs.db
 .vscode/
 .idea/
 
-# ===========================
-# Debug / test scripts (Backend temp files)
-# ===========================
-add_thawe_sweet.js
-amazon_image.js
-check_api.js
-check_gemini.js
-debug-gemini.js
-fix_thawe_pudikiya.js
-inspect_files.js
-inspect_require.js
-list-models-full.js
-list-models.js
-test*.js
-verbose_diagnostics.js
-wipe.js
-seed.js
-target_files.txt
-response.html
