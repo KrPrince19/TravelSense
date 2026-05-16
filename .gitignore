@@ -1,0 +1,80 @@
+# ===========================
+# Node.js / npm
+# ===========================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+.pnp
+.pnp.js
+
+# ===========================
+# Environment & Secrets
+# ===========================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+
+# ===========================
+# Next.js (Frontend)
+# ===========================
+.next/
+out/
+build/
+.next/cache/
+next-env.d.ts
+
+# ===========================
+# TypeScript build artifacts
+# ===========================
+*.tsbuildinfo
+tsconfig.tsbuildinfo
+dist/
+
+# ===========================
+# Logs & Diagnostics
+# ===========================
+*.log
+logs/
+error.log
+server_output.txt
+out.txt
+files_list.txt
+models.txt
+
+# ===========================
+# Docker
+# ===========================
+.dockerignore
+
+# ===========================
+# OS & Editor
+# ===========================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ===========================
+# Debug / test scripts (Backend temp files)
+# ===========================
+add_thawe_sweet.js
+amazon_image.js
+check_api.js
+check_gemini.js
+debug-gemini.js
+fix_thawe_pudikiya.js
+inspect_files.js
+inspect_require.js
+list-models-full.js
+list-models.js
+test*.js
+verbose_diagnostics.js
+wipe.js
+seed.js
+target_files.txt
+response.html

@@ -1,0 +1,18 @@
+services:
+  frontend:
+    build: ./TravelSense-Frontend/frontend
+    container_name: travelsense-frontend-container
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    environment:
+      - NEXT_PUBLIC_API_URL=http://backend:5000
+
+  backend:
+    build: ./TravelSense-Backend
+    container_name: travelsense-backend-container
+    ports:
+      - "5000:5000"
+    env_file:
+      - ./TravelSense-Backend/.env
