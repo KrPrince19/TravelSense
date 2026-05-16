@@ -132,14 +132,19 @@ Respond ONLY in valid JSON format matching this exact structure containing no ma
       is_fallback: true,
       famous_foods: [
         {
-          name: "Regional Specialty",
-          description: `A delicious local dish popular in ${city}.`,
-          image_url: ""
+          name: `Classic ${city} Dish`,
+          description: `A delicious local dish popular in ${city}. It represents the authentic taste of the region.`,
+          image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg/500px-Good_Food_Display_-_NCI_Visuals_Online.jpg"
         },
         {
-          name: "Local Street Food",
-          description: `Famous street food found across ${state}.`,
-          image_url: ""
+          name: `${state} Street Treat`,
+          description: `Famous street food found across ${state}. Perfect for a quick bite while exploring.`,
+          image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Recipe_of_delicious_street_food_in_India.jpg/500px-Recipe_of_delicious_street_food_in_India.jpg"
+        },
+        {
+          name: "Regional Dessert",
+          description: `A sweet delicacy beloved by locals. A must-try dessert when visiting.`,
+          image_url: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Indian_Sweets.jpg/500px-Indian_Sweets.jpg"
         }
       ],
       languages: [
